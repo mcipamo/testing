@@ -1,3 +1,5 @@
+touch /var/www/html/index.html
+touch index.html
 echo "<!DOCTYPE html>" > /var/www/html/index.html
 echo "<html>" >> /var/www/html/index.html
 
