@@ -15,6 +15,8 @@ RUN sed -i "s/#ServerName www.example.com:80/ServerName 0.0.0.0:8080/g" /etc/htt
 # Permissions to allow container to run on OpenShift
 RUN chgrp -R 0 /var/log/httpd /var/run/httpd && \
     chmod -R g=u /var/log/httpd /var/run/httpd
+
+COPY mailer.sh /tmp/
 # Run as a non-privileged user
 USER 1001
 
