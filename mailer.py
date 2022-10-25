@@ -1,5 +1,5 @@
 # to open/create a new html file in the write mode
-f = open('/var/www/html/index.html', 'w')
+f = open('/opt/rh/httpd24/root/usr/share/httpd/noindex/index.html', 'w')
 
 # the html code which will go in the file index.html
 html_template = """<html>
